@@ -192,7 +192,7 @@
 
         .stats {
             display: grid;
-            grid-template-columns: repeat(3, 1fr);
+            grid-template-columns: repeat(4, 1fr);
             gap: 2rem;
             margin-top: 3rem;
         }
@@ -220,6 +220,81 @@
         .stat-label {
             color: #666;
             font-weight: 500;
+        }
+
+        /* Evidence Section */
+        .evidence {
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            color: white;
+        }
+
+        .evidence-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 3rem;
+            margin-top: 3rem;
+        }
+
+        .evidence-card {
+            background: rgba(255,255,255,0.1);
+            padding: 2.5rem;
+            border-radius: 20px;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255,255,255,0.2);
+            transition: all 0.3s ease;
+        }
+
+        .evidence-card:hover {
+            transform: translateY(-5px);
+            background: rgba(255,255,255,0.15);
+        }
+
+        .evidence-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: #64b5f6;
+        }
+
+        .salary-highlight {
+            font-size: 2rem;
+            font-weight: 700;
+            color: #4caf50;
+            margin: 1rem 0;
+        }
+
+        .salary-range {
+            background: linear-gradient(45deg, #4caf50, #81c784);
+            padding: 1.5rem;
+            border-radius: 15px;
+            margin: 2rem 0;
+            text-align: center;
+        }
+
+        .salary-range h4 {
+            font-size: 1.3rem;
+            margin-bottom: 1rem;
+        }
+
+        .salary-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 0.8rem 0;
+            padding: 0.5rem;
+            background: rgba(255,255,255,0.2);
+            border-radius: 8px;
+        }
+
+        .success-story {
+            background: linear-gradient(135deg, #ff6b6b 0%, #ee5a24 100%);
+            padding: 2rem;
+            border-radius: 15px;
+            margin: 2rem 0;
+        }
+
+        .success-story h4 {
+            font-size: 1.2rem;
+            margin-bottom: 1rem;
         }
 
         /* Programs Section */
@@ -372,7 +447,7 @@
             }
 
             .stats {
-                grid-template-columns: 1fr;
+                grid-template-columns: repeat(2, 1fr);
             }
 
             .programs-grid {
@@ -438,10 +513,71 @@
                             <div class="stat-label">Programas Especializados</div>
                         </div>
                         <div class="stat-card">
+                            <div class="stat-number">US$20K</div>
+                            <div class="stat-label">Salario Máximo Posible</div>
+                        </div>
+                        <div class="stat-card">
                             <div class="stat-number">24/7</div>
                             <div class="stat-label">Soporte Educativo</div>
                         </div>
                     </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Evidence Section -->
+    <section class="section evidence">
+        <div class="container">
+            <h2 class="section-title animate-on-scroll" style="color: white;">Evidencias <span style="color: #64b5f6;">Reales</span></h2>
+            
+            <div class="salary-range animate-on-scroll">
+                <h4>💰 Salarios Reales de Programadores en Paraguay (2024-2025)</h4>
+                <div class="salary-item">
+                    <span>Programador Junior (1-2 años)</span>
+                    <strong>$1.500.000 - $2.500.000 Gs/mes</strong>
+                </div>
+                <div class="salary-item">
+                    <span>Programador Semi-Senior (3-5 años)</span>
+                    <strong>$5.800.000+ Gs/mes</strong>
+                </div>
+                <div class="salary-item">
+                    <span>Programador Senior (Remoto Internacional)</span>
+                    <strong>US$3.000 - US$20.000/mes</strong>
+                </div>
+            </div>
+
+            <div class="evidence-grid animate-on-scroll">
+                <div class="evidence-card">
+                    <h3>🌍 Oportunidades Globales</h3>
+                    <p>Los desarrolladores paraguayos pueden acceder a salarios internacionales trabajando remotamente.</p>
+                    <div class="salary-highlight">US$3.000 - US$7.000</div>
+                    <p>Rango salarial mensual para desarrolladores latinos en empresas internacionales, según Forbes y empresas IT globales.</p>
+                </div>
+                
+                <div class="evidence-card">
+                    <h3>📈 Crecimiento Exponencial</h3>
+                    <p>Un programador puede multiplicar sus ingresos por 10 en pocos años:</p>
+                    <div class="salary-highlight">1.5M → 15M+ Gs</div>
+                    <p>Desde salario junior local hasta senior internacional en 3-5 años de experiencia.</p>
+                </div>
+
+                <div class="evidence-card">
+                    <h3>💡 Casos de Transformación Real</h3>
+                    <div class="success-story">
+                        <h4>Irma Olguín Jr. - Fresno, California</h4>
+                        <p>"Primera en su familia en ir a universidad. Hoy tiene una empresa tecnológica valorada en $100 millones y transformó su ciudad natal."</p>
+                    </div>
+                </div>
+
+                <div class="evidence-card">
+                    <h3>🏆 Impacto Comprobado</h3>
+                    <p>La tecnología está sacando familias de la pobreza globalmente:</p>
+                    <ul style="text-align: left; margin-top: 1rem;">
+                        <li>• 70.4% de países menos desarrollados tienen acceso móvil</li>
+                        <li>• Comunidades duplican ingresos con tecnología</li>
+                        <li>• Jóvenes evitan drogas con oportunidades reales</li>
+                    </ul>
                 </div>
             </div>
         </div>
